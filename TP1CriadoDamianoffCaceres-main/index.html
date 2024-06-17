@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilodeptos.css" type="text/css"/>
+    <title>Inicio</title>
+</head>
+<body>
+    <header style="align-items: center;">
+        <nav class="menu">
+            <a id="logorbhref" href="index.html"><img id="logorb_menu" src="imgs/logo sin letras.png" alt=""></a>
+            <ul class="menu_items">
+              <li><a href="casa.html" id="casas" href="">Casas</a></li>
+              <li><a href="deptos.html" id="deptos" href="">Departamentos</a></li>
+              <li><a href="oficinas.html" id="oficinas" href="">Oficinas</a></li>
+              <li><a id="quienes" href="Sobre_Nosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img id="fotofamilia" src="C:\Users\HP\Desktop\Diseño y desarrollo web\pagina diseño\familiafeliz.jpeg">
+    <h1 id="textosobreimagen">
+        BIENVENIDOS A RINCHOMPONS REAL STATE
+
+    </h1>
+    
+    <form id="emailForm">
+        <label for="email">Ingrese su email para registrarse:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Enviar</button>
+    </form>
+    <footer >
+        <div class="social-icons">
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">Facebook<img id="imgfootface" src="imgs\facebook logo.png"></a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter<img id="imgfootx" src="imgs\xlogo.png"></a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram <img id="imgfootig" src="imgs\iglogo.png"></a></li>
+            </ul>
+            
+        </div>
+        <p class="terminos" style="color: black; align-items: center;">&copy; 2024 RINCHOMPONS. Todos los derechos reservados.</p>
+        <p><a href="privacidad.html" style="color: black;">Política de Privacidad</a> | <a href="terminos.html" style="color: white;">Términos de Uso</a></p>
+        <h1>Formulario de Registro de Correo Electrónico</h1>
+
+    
+    </footer>
+    <script language="javascript">
+        document.getElementById('emailForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var userEmail = document.getElementById('email').value;
+
+
+  alert("¡Bienvenido " + userEmail+"!");
+
+  emailForm.style.display = 'none'
+  document.getElementById('emailForm').reset();
+});
+    </script>
+</body>
+</html>

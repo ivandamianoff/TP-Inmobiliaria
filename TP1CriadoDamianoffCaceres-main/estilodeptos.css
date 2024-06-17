@@ -1,0 +1,268 @@
+@charset "utf-8";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #fefee6;
+    width: 1024px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    margin: auto;
+    width: 1024px;
+    height: 75px;
+    background-color: #555513;
+    
+}
+footer{
+    width: 1024px;
+    text-align: left;
+    padding: 20px;
+    position: absolute;
+    background-color: #555513;
+    color: #fff;
+    bottom: 0;
+    height: 60px;
+}
+.social-icons{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  font-size: 15px; 
+  font-weight: bold;
+  white-space: nowrap;
+}
+.terminos{
+    margin-top: 80px;
+}
+#searchForm{
+    padding-top: 10px;
+}
+#deptoA, #deptoB, #deptoC, #deptoD {
+    width: 300px;
+    height: 300px;
+    border-color: #555513;
+    border-width: 10px;
+}
+#imgfootface{
+    width: 30px;
+    height: 30px;
+    
+}
+#imgfootig{
+    width: 20px;
+    height: 20px;
+    
+}
+#imgfootx{
+    width: 20px;
+    height: 20px;
+    margin-left: 18px;
+}
+#deptoAtexto, #deptoBtexto,#deptoCtexto,#deptoDtexto{
+    display: inline-block;
+    position: absolute;
+    margin-left: 20px;
+   font-size: 17px; 
+}
+
+div{
+    width: 1024px;
+    height: auto;
+    margin: auto;
+    padding-top: 73px;
+    padding-bottom: 73px;
+}
+#logorb_menu{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+
+}
+
+.menu a{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    display: block;
+    border-radius: 5px 2px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color:#ffd400;
+    transition: all 0.3s ease;
+
+}
+
+.menu_items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    position: relative;
+    padding-top: 25px;
+
+}
+
+#casas{
+    margin-left: 210px;
+
+}
+
+#deptos{
+    margin-left: 50px;
+
+}
+
+#oficinas{
+    margin-left: 50px;
+
+}
+
+#quienes{
+    margin-left: 50px;
+
+
+} 
+
+#listaA, #listaB, #listaC, #listaD {
+    margin-left: 15px;
+}
+
+
+
+.container {
+	display: flex;
+    position: relative;
+    margin: auto;
+    width: 1024px;
+  }
+  
+.carousel {
+	position: relative;
+	max-width: 800px;
+	margin: auto;
+    margin-right: 50px;
+}
+  
+.slide-container {
+	display: flex;
+	overflow: hidden;
+}
+  
+.slide {
+	display: none;
+}
+  
+.slide.active {
+	display: block;
+}
+
+
+#imgcarrousel{
+
+    width: 750px;
+    height: auto;
+}
+  
+#prevBtn,
+#nextBtn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+}
+  
+#prevBtn {
+	left: 0;
+}
+  
+  #nextBtn {
+	right: 0;
+}
+  
+  .text-list {
+	margin-top: 15px;
+	padding-left: 20px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#fotofamilia {
+    width: 1024px;
+    position: relative;
+}
+#textosobreimagen {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  font-size: 30px; 
+  font-weight: bold;
+  white-space: nowrap;
+}
+ #emailForm{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  color: white; 
+  font-size: 30px; 
+  font-weight: bold;
+  white-space: nowrap;
+}
+.about-section {
+    font-size: large;
+    margin: 7% auto; 
+    max-width: 800px;
+    height: auto;
+    background-color: #fff;
+    padding: 51px;
+    padding-top: 0%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    width: auto;
+    background-position: 50px;
+    background-color: #555513; 
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.contact-info ul li {
+    margin-bottom: 0px;
+}
+
+.contact-info ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+    color: #fefee6;
+    transition: color 0.3s ease;
+}

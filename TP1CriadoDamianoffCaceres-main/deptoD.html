@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="estilodeptos.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Departamentos // Rinchompons</title>
+</head>
+<body>
+
+    <header style="align-items: center;">
+        <nav class="menu">
+            <a id="logorbhref" href="index.html"><img id="logorb_menu" src="imgs/logo sin letras.png" alt=""></a>
+            <ul class="menu_items">
+              <li><a href="casa.html" id="casas" href="">Casas</a></li>
+              <li><a href="deptos.html" id="deptos" href="">Departamentos</a></li>
+              <li><a href="oficinas.html" id="oficinas" href="">Oficinas</a></li>
+              <li><a id="quienes" href="">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <section class="container">
+    <section class="carousel">
+      <button id="prevBtn" onclick="prevSlide()">&#10094;</button>
+      <section class="slide-container">
+        <section class="slide active">
+          <img id="imgcarrousel" src="imgs/Depto_D_1.png" alt="Image 1">
+        </section>
+        <section class="slide">
+          <img id="imgcarrousel" src="imgs/Depto_D_2.png" alt="Image 2">
+        </section>
+        <section class="slide">
+          <img id="imgcarrousel" src="imgs/Depto_D_4.png" alt="Image 3">
+        </section>
+      </section>
+      <button id="nextBtn" onclick="nextSlide()">&#10095;</button>
+    </section>
+    <ul class="text-list">
+        <li>3 ambientes</li>
+        <li>Opciones gastronomicas cerca</li>
+        <li>Gran ubicacion</li>
+        <h2><b>40.000$ p/m</b></h2>
+        <h3><b>200.000 U$D</b></h3>
+    </ul>
+  </section>
+
+   
+</body>
+<script>
+    let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function showSlide(n) {
+ slides[currentSlide].classList.remove('active');
+ currentSlide = (n + totalSlides) % totalSlides;
+ slides[currentSlide].classList.add('active');
+}
+
+function prevSlide() {
+ showSlide(currentSlide - 1);
+}
+
+function nextSlide() {
+ showSlide(currentSlide + 1);
+}
+
+showSlide(currentSlide);
+  
+</script>
+</html>
